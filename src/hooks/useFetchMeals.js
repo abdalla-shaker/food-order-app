@@ -12,7 +12,7 @@ const useFetchMeals = (initialValue) => {
     async function fetchingMeals() {
       setIsFetching(true);
 
-      const fetchedData = await fetch("https://abdalla-shaker.github.io/food-order-app//meals");
+      const fetchedData = await fetch("https://abdalla-shaker.github.io/food-order-app/meals");
       const data = await fetchedData.json();
 
       if (!fetchedData.ok) {
