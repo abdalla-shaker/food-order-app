@@ -23,8 +23,6 @@ jobs:
       - name: Build project
         run: npm run build
 
-      - run: node app.js
-
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v3
         with:
